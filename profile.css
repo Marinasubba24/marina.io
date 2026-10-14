@@ -2,6 +2,73 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        padding: 12px 8px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        margin: 0 0 5px;
+    }
+
+    nav a {
+        margin: 4px 6px;
+        font-size: 14px;
+    }
+}
+
+/* iPhone */
+@media screen and (max-width: 480px) {
+    nav {
+        width: 100%;
+        padding: 10px 5px;
+        gap: 5px;
+    }
+
+    nav h2 {
+        font-size: 19px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 3px 4px;
+        padding: 4px 2px;
+        white-space: nowrap;
+    }
+
+    section {
+        width: 94%;
+        padding: 16px;
+    }
+
+    #home h1 {
+        font-size: 26px;
+    }
+
+    #education {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 400px;
+    }
+}
+
+
 html{
     scroll-behavior: smooth;
     scroll-margin-top: 500px;
@@ -25,6 +92,10 @@ nav {
     top: 0;
     z-index: 100;
     box-shadow: 0 3px 10px rgba(53, 38, 83, 0.2);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 nav h2 {
@@ -218,14 +289,3 @@ li:hover{
     background-color: rgb(113, 130, 140);
 border-radius: 20px;
 }
-@media screen and (max-width:768px){
-    nav{
-        width:100px;
-        height:auto;
-        padding: 10px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-@media screen and (max-width:480px) 
